@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+  <info>
+  <name>Custom Content</name>
+		<description>Content for the 5e games I'm in</description>
+		<author url="https://github.com/Valthek">Valthek</author>
+    <update version="1.0">
+      <file name="sample.index" url="https://github.com/Valthek/AuroraCustomGameContent/blob/master/library.index" />
+    </update>
+  </info>
+  <files>
+    <file name="content.index" url="https://github.com/Valthek/AuroraCustomGameContent/blob/master/content.index" />
+    <file name="gear.index" url="https://github.com/Valthek/AuroraCustomGameContent/blob/master/gear.index" />
+    <file name="rules.index" url="https://github.com/Valthek/AuroraCustomGameContent/blob/master/rules.index" />
+  </files>
+</index>

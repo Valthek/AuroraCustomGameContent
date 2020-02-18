@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Houserules and Rules updates</name>
+		<description>Some rules get tweaked</description>
+		<author url="https://github.com/Valthek">Valthek</author>
+		<update version="1.0">
+            <file name="rules.index" url="https://github.com/Valthek/AuroraCustomGameContent/blob/master/rules.index" />
+		</update>
+	</info>
+	<files>	
+            <file name="houserules.xml" url="https://github.com/Valthek/AuroraCustomGameContent/blob/master/houserules.xml" />	
+	</files>
+</index>

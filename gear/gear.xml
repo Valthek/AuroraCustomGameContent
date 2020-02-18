@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+ <!-- Battle Axe -->
+	<element name="Malediction" type="Magic Item" source="Homebrew" id="ID_CUSTOM_WEAPON_MALEDICTION">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_GROUP_AXES</supports>
+		<description>
+			<p class="indent">Hit Points lost to this weapon’s damage can be regained only through a short or Long Rest, rather than by regeneration, magic, or any other means. </p>
+			<p class="indent">Whenever the wielder scores a critical hit with this weapon or reduces a creature to 0 HP, they may spend their reaction to cast Bane on a target within 30 ft. This effect uses the wielder’s constitution to calculate the Spell Save DC.</p>
+		</description>
+		<setters>
+			<set name="keywords">any axe</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any axe">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_AXES</set>
+			<set name="name-format">Malediction</set>
+		</setters>
+	</element>
+  <!-- Hunting Horns -->
+	<element name="Hunting Horn (Common)" type="Weapon" source="Homebrew" id="ID_CUSTOM_WEAPON_HUNTING_HORN_COMMON">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWO-HANDED</supports>
+		<description>
+			<p class="indent">As a bonus action, after you hit, pick a note. Use an action to play up to 2 accumulated notes</p>
+			<ul>
+				<li>Attack up (s). +1 bludgeoning, slashing, and piercing damage.</li>
+				<li>Skill up (s). +1 to any one skill chosen by the wielder.</li>
+				<li>Movement up (s). +5 speed.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="8">8 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="bludgeoning">1d12</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_MAUL</set>
+		</setters>
+	</element>
+	<!-- Hunting Horns -->
+	<element name="Hunting Horn (Uncommon)" type="Weapon" source="Homebrew" id="ID_CUSTOM_WEAPON_HUNTING_HORN_UNCOMMON">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWO-HANDED</supports>
+		<description>
+			<p class="indent">As a bonus action, after you hit, pick a note. Use an action to play up to 3 accumulated notes</p>
+			<ul>
+				<li>Defense up (s). +1 AC.</li>
+				<li>Lightning Attack up (s). +2 lightning damage.</li>
+				<li>Movement up (s). +5 speed.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="8">8 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="bludgeoning">1d12</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_WARHAMMER</set>
+		</setters>
+	</element>
+	<!-- Hunting Horns -->
+	<element name="Hunting Horn (Very Rare)" type="Weapon" source="Homebrew" id="ID_CUSTOM_WEAPON_HUNTING_HORN_VERY_RARE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWO-HANDED</supports>
+		<description>
+			<p class="indent">This weapons deals +1d6 fire damage</p>
+			<p class="indent">As a bonus action you may release the skull as a spiritual weapon that deals +1d6 fire damage. It attacks as proficiency +3</p>
+			<p class="indent">As a bonus action, after you hit, pick a note. Use an action to play up to 5 accumulated notes</p>
+			<ul>
+				<li>Defense up (s). +1 AC.</li>
+				<li>Lightning Attack up (s). +2 lightning damage.</li>
+				<li>Movement up (s). +5 speed.</li>
+				<li>Skill up (s). +1 to a skill</li>
+				<li>Resistance up (m). +2 to saves.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="8">8 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="bludgeoning">1d12</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_WARHAMMER</set>
+		</setters>
+	</element>
+	<element name="Crown of Kings" type="Magic Item" source="Homwbrew" id="ID_CUSTOM_ITEM_CROWN_OF_KINGS">
+		<description>
+			<p>Wearing this crown grants you 17 charisma and immunity to Suggestion, Charm Person and Friends spells</p>			
+		</description>
+		<setters>
+			<set name="keywords">charisma</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">head</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+		<rules>
+			<stat name="charisma:score:set" value="17" bonus="base" />
+		</rules>
+	</element>
+	<element name="Crown of Kings" type="Magic Item" source="Homebrew" id="ID_CUSTOM_ITEM_CROWN_OF_KINGS">
+		<description>
+			<p>Wearing this crown grants you 17 charisma and immunity to Suggestion, Charm Person and Friends spells</p>			
+		</description>
+		<setters>
+			<set name="keywords">charisma</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">head</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+		<rules>
+			<stat name="charisma:score:set" value="17" bonus="base" />
+		</rules>
+	</element>
+	<element name="Fortified Full Plate" type="Magic Item" source="Homebrew" id="ID_CUSTOM_ITEM_FORTIFIED_PLATE">
+		<description>
+			<p>This plate grants +2 to constitution</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">body</set>
+			<set name="type" addition="heavy">Armor</set>
+			<set name="rarity">uncommon</set>
+			<set name="enhancement">0</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+		</setters>
+		<rules>
+			<stat name="constitution" value="2" />
+		</rules>
+	</element>
+	<element name="Windwalker Armor" type="Magic Item" source="Homebrew" id="ID_CUSTOM_ITEM_WINDWALKER_ARMOR">
+		<description>
+			<p>The Windwalker Armor is a blue-gray suit of plate armor, though it does not have armor on the upper arms, nor a helmet. It is decorated with a set of ancient runes that describe various storms and winds. It enables bursts of speed in the wearer, enabling feats of jumping and climbing and even short, near-uncontrolled bursts of flight.</p>
+			<p>This armor holds 6 charges. As long as a single charge remains, the armor is light and will not fatigue the wearer due to long marches, wearing it for extended periods, etc.</p>
+			<p>A charge may be spent each round on for one of the following: </p>
+			<p class="indent">During the wearer’s turn: Increase the wearer’s movement speed by 30 ft. Only usable if already moved more then 10ft that round. not usable while bound/... </p>
+			<p class="indent">Gain advantage on an Athletics (strength) or Acrobatics (dexterity) ability check.</p>
+			<p class="indent">The wearer moves 15 feet in any direction (including up). If this movement brings the wearer into contact with an enemy and they make an attack immediately after, the attack deals an additional 1d6 bludgeoning damage.</p>
+			<p>The armor recovers 1 charge per short rest or all per long rest.</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">body</set>
+			<set name="type" addition="heavy">Armor</set>
+			<set name="rarity">uncommon</set>
+			<set name="enhancement">0</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+		</setters>
+	</element>
+	<element name="Ring of Bloodthirst" type="Magic Item" source="Homebrew" id="ID_CUSTOM_ITEM_RING_OF_BLOODTHIRST">
+		<description>
+			<p>Before an attack, spend a hit die to increase damage by 1d6</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="category">Wonderous</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">ring</set>
+			<set name="rarity">uncommon</set>
+			<set name="enhancement">0</set>
+		</setters>
+	</element>
+</elements>
